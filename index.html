@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKES | Luxury Milkshake Brand</title>
+    <meta name="description"
+        content="Experience the ultimate luxury in milkshakes. A cinematic journey through flavor.">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Removed Lucide script as we are using direct SVGs for performance and reliability -->
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="./assets/logo.png" alt="SHAKES Logo" class="brand-logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content-wrapper">
+                <div class="hero-left">
+                    <div class="hero-text-container">
+                        <div class="hero-text-part top">SUMMER</div>
+                        <div class="hero-text-part bottom">EXCLUSIVE</div>
+                        <div class="hero-description reveal-text">
+                            A curated symphony of silk and rare botanicals. Experience the art of the perfect blend,
+                            crafted for the most discerning palates.
+                        </div>
+                        <div class="hero-cta-wrap reveal-text">
+                            <a href="#product" class="cta-button primary">Explore Collection</a>
+                            <a href="#process" class="cta-button secondary">Our Craft</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="canvas-container">
+                        <canvas id="hero-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <button id="skip-animation" class="skip-btn">Skip Animation</button>
+        </section>
+
+        <section id="product" class="content-section">
+            <div class="container">
+                <h2 class="reveal-text">Reimagining Indulgence</h2>
+                <p class="reveal-text">Crafted with the finest organic dairy and ethically sourced botanicals. Our
+                    milkshakes are not just a drink; they are a sensory masterpiece.</p>
+                <div class="product-grid">
+                    <div class="product-card reveal-text">
+                        <div class="card-image-wrap">
+                            <img src="./assets/vanilla.png" alt="Velvet Vanilla" class="card-image-img">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <h3>Velvet Vanilla</h3>
+                        <p>Madagascar bourbon vanilla bean with a hint of sea salt.</p>
+                        <span class="price">$18.00</span>
+                    </div>
+                    <div class="product-card reveal-text">
+                        <div class="card-image-wrap">
+                            <img src="./assets/cacao.png" alt="Signature Cacao" class="card-image-img">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <h3>Signature Cacao</h3>
+                        <p>70% dark single-origin Tanzanian chocolate.</p>
+                        <span class="price">$22.00</span>
+                    </div>
+                    <div class="product-card reveal-text">
+                        <div class="card-image-wrap">
+                            <img src="./assets/berries.png" alt="Forest Berries" class="card-image-img">
+                            <div class="card-overlay"></div>
+                        </div>
+                        <h3>Forest Berries</h3>
+                        <p>Wild-harvested berries infused with organic lavender.</p>
+                        <span class="price">$20.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="content-section luxury-process">
+            <div class="container">
+                <div class="process-header reveal-text">
+                    <span class="section-tagline">Our Craft</span>
+                    <h2 class="reveal-text">The Alchemy of Flavor</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="step reveal-text">
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                                <path d="M5 3v4" />
+                                <path d="M19 17v4" />
+                                <path d="M3 5h4" />
+                                <path d="M17 19h4" />
+                            </svg>
+                        </div>
+                        <span class="step-num">Phase 01</span>
+                        <h4>Curated Selection</h4>
+                        <p>Each ingredient is hand-picked at its peak of flavor profile from our global network of
+                            ethical farms.</p>
+                    </div>
+                    <div class="step reveal-text">
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M7 16.3c2.2 0 4-1.8 4-4 0-3.3-4-6-4-6s-4 2.7-4 6c0 2.2 1.8 4 4 4Z" />
+                                <path
+                                    d="M17 18.5c2.5 0 4.5-2 4.5-4.5 0-3.7-4.5-6.8-4.5-6.8s-4.5 3.1-4.5 6.8c0 2.5 2 4.5 4.5 4.5Z" />
+                            </svg>
+                        </div>
+                        <span class="step-num">Phase 02</span>
+                        <h4>Slow Infusion</h4>
+                        <p>A 24-hour proprietary slow infusion process to capture the deepest, most complex essences of
+                            nature.</p>
+                    </div>
+                    <div class="step reveal-text">
+                        <div class="step-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+                                <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+                                <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+                            </svg>
+                        </div>
+                        <span class="step-num">Phase 03</span>
+                        <h4>Artisanal Mastery</h4>
+                        <p>Blended with surgical precision to achieve the perfect silk-like consistency and balanced
+                            notes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mastery" class="content-section mastery-parallax">
+            <div class="parallax-bg-wrap">
+                <img src="./assets/ingredients.png" alt="Luxury Ingredients" class="parallax-img">
+            </div>
+            <div class="container">
+                <div class="mastery-content">
+                    <h2 class="reveal-text">The Mastery of Ingredients</h2>
+                    <p class="reveal-text">We scout the globe for the extraordinary. From the volcanic soils of
+                        Madagascar to the lush forests of Tanzania, every element of SHAKES is a testament to nature's
+                        finest offerings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-exclusive">
+            <div class="container reveal-text">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="reveal-text">Join the Circle</h2>
+                        <p class="reveal-text">Become a part of the most exclusive flavor society. Members receive
+                            priority access to seasonal drops and invite-only tasting events.</p>
+                    </div>
+                    <div class="contact-form-wrap">
+                        <form class="contact-form">
+                            <div class="input-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="E.g. Alexander Vance" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="alex@vance.com" required>
+                            </div>
+                            <button type="submit" class="cta-button primary">Apply for Access</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="./assets/logo.png" alt="SHAKES Logo" class="footer-logo">
+                    <p>Defining the gold standard of artisanal indulgence since 2023.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h5>Explore</h5>
+                        <a href="#home">Home</a>
+                        <a href="#product">Products</a>
+                        <a href="#process">The Craft</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Connect</h5>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Concierge</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></a>
+                </div>
+                <p>&copy; 2024 SHAKES Global Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
